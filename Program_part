@@ -1,0 +1,11 @@
+        public List<string> Sort(List<string> theList, char theChar)
+        {
+            List<string> value = new List<string>();
+            foreach (var row in theList)
+            {
+                if (row.StartsWith(theChar.ToString()))
+                    value.Add(row);               
+            }
+            
+            return value;
+        }
